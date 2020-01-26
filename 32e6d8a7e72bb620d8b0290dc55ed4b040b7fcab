@@ -1,0 +1,1 @@
+{"jobID":"2770081c-c38a-a203-6505-0669d6361153","spec":{"type":"policy","cause":{"Message":"","User":"Roman DOlgyi \u003croman@btsolutions.co\u003e"},"spec":{"default:deployment/nginx":{"add":null,"remove":{"automated":"true"}}}},"result":null}
