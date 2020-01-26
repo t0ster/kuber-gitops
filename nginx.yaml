@@ -1,7 +1,10 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
+  annotations:
+    flux.weave.works/automated: 'true'
 spec:
   selector:
     matchLabels:
