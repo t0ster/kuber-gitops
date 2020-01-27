@@ -17,7 +17,7 @@ spec:
   values:
     image:
       repository: t0ster/kuber-ui
-      tag: feature-1
+      tag: feature-4
       pullPolicy: Always
     host: master.kuber.35.246.75.225.nip.io
     release: 1580090465
