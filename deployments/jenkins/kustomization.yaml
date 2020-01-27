@@ -1,3 +1,4 @@
 resources:
 - jenkins_instance.yaml
+- ingress.yaml
 namespace: jenkins
