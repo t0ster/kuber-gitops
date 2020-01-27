@@ -2,4 +2,4 @@ resources:
 - jenkins_instance.yaml
 - ingress.yaml
 - cred.yaml
-namespace: jenkins
+namespace: cicd
