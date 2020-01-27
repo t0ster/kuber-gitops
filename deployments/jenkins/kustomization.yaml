@@ -2,4 +2,5 @@ resources:
 - jenkins_instance.yaml
 - ingress.yaml
 - cred.yaml
+- github-secrets.yaml
 namespace: cicd

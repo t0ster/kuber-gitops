@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: jenkins
+data:
+  1-config.yaml: |
+    unclassified:
+      location:
+        url: "http://ci.35.246.75.225.nip.io/"
+      gitHubPluginConfig:
+        configs:
+        - credentialsId: "github-access-token"
+        hookUrl: "http://ci.35.246.75.225.nip.io/github-webhook/"

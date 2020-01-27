@@ -3,6 +3,9 @@ kind: Jenkins
 metadata:
   name: jenkins
 spec:
+  configurationAsCode:
+    configurations:
+    - name: jenkins
   master:
     plugins:
     - name: blueocean
