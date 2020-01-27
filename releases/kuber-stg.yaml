@@ -5,6 +5,7 @@ metadata:
   namespace: stg
   annotations:
     fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:feature-*
 spec:
   releaseName: kuber
   forceUpgrade: true
