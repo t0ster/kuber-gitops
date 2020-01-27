@@ -6,6 +6,7 @@ spec:
   master:
     plugins:
     - name: blueocean
+      version: 1.21.0
     basePlugins:
     - name: kubernetes
       version: 1.23.1
