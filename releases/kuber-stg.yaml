@@ -1,0 +1,18 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: kuber
+  namespace: stg
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: kuber
+  chart:
+    git: git@github.com:t0ster/kuber.git
+    path: charts/kuber-stack
+    ref: master
+  values:
+    image:
+      repository: t0ster/kuber-ui
+      tag: feature-1
+      host: master.kuber.35.246.75.225.nip.io
