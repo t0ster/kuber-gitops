@@ -20,4 +20,4 @@ spec:
       tag: feature-5
       pullPolicy: Always
     host: master.kuber.35.246.75.225.nip.io
-    release: 1580090466
+    release: "1580090466"
