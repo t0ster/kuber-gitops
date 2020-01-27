@@ -1,15 +1,21 @@
-apiVersion: v1
-kind: Secret
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
 metadata:
-# this is the jenkins id.
-  name: "another-test-usernamepass"
-  labels:
-# so we know what type it is.
-    "jenkins.io/credentials-type": "usernamePassword"
-  annotations:
-# description - can not be a label as spaces are not allowed
-    "jenkins.io/credentials-description" : "credentials from Kubernetes"
-type: Opaque
-stringData:
-  username: myUsername
-  password: 'Pa$$word'
+  creationTimestamp: null
+  name: another-test-usernamepass
+  namespace: default
+spec:
+  encryptedData:
+    password: AgAu2GW963NpcmoSzFlrDK+UHmmiV6JFjgBkud3Q0lu+ELpYOR3Zo5xvrTwR3UNtFuozKnEA0NJyJvXYapmhOHxGjV/E9fz9szYAl+UlB8MFyGZ1uebRXQsmDIiSeMPgQ1LLJx9AqIHsnsSkeoWk0pcU9aM5z+cs6PfI4Lk7tlRLW9Ul26AZmr04pfoE6T6iOv5TeFBvrPWFaAaZZh8DCLL4tWwOrYR6h3mDZqey8HFxohWDt8AGbil5voxr4gypj/AXj1jF9IkkSgXAQap2sqCXaDsBFpDk7UuH1GalN+h21vZiEL4PRysgkc+otygeCjbDc9qX9GUJTDwWC70thjSzkmnJ48Ll1r4E7Yd/JpxkNgBp/8rQn3h42jfin58hA8DSOEKgkAO1s/l3wlQw/ysT/Q4G69G2SMAP7bWRshIZZCnTlSixxCUlg6Unz3esF74uAluKwBIAp1NL5HETd/Ai07SCiTSe1blterByGZdNS/D9I9PSmkqIfv16duHk9Xo5j3EJ1BfzmNHVi0wRBOIpJJINXNIKGLwlqkB3uPBpCa1gSLfj1cKByqy27zOthqZ2QzI853lrDoNbjid+yj6rsLrIscL1k1U2Rn3/81n/JLLq2StARk6e8H9fJdbxCim2E7iKYX6hGiyY5Es+oCzjedCVlzbeWHu6RB/ETllUirBGBH3C/d8wL1oyvGdXP9bydIqYmpHxNg==
+    username: AgCpPz/fMUZVk+e6Yi5rj9aNQ6mRVpXX/3SvvRiSFjeHIMxOYk1979WBZIIG2axkmNyI+hl+08/VKjcqHSQq2CM9qUhGR4GRRfLBoIvymQkuEMELKJp/JzVIA3853RT2AhnH9ceikuHyik3iYSeol0ENEWm1jPGdWn+G6OeTjFhenU74MXwHoU5efOooqZvjWlYGrz2m2OMTmrerQv5ZNkxQ4x3V5qoEfNUW9Pw0vDWc9Nvk+ITV3tmuR6+9mT3fHojTRe3Rsydm4NO233Im5abYSh7nCzgkqQB/e31ssoftxWpnukjTNOc4bLAmZkj6N1jAsWAn/aUYJLMeMdUp/8mba/WeldsfOwNin0m4IAGis3iw87WfZucGRQr6/cMLExzUVNOMYX0N/+fUFM0dljANmos18oJ0f+vTPFfODdS2VujRjBDxr/THO71b0D/5CG5NSxc5ub0WHBEqYpNedJVudyp5y3wxJj7HZCEAu6pr7kcjpltWggFdhWwYE5bbdowja9Os0RrKZZxl2ReAoZz6JPXCDqQLO7Vm7ZKsDIVelurb55Zx/8fHIEXFMj7zVb5jJiw8C6U6uRxkyySai87nBmd32llDNrzKA80hx28M7gj8/HskayW9pIjfLYXLU9ZS0wRxQCJwiOebV4DqfDSmAFQ4fEZus765MhczLbXInz4RWhgfSNJwA5db2oqEmGay/EOaz6jHRyae
+  template:
+    metadata:
+      annotations:
+        jenkins.io/credentials-description: credentials from Kubernetes
+      creationTimestamp: null
+      labels:
+        jenkins.io/credentials-type: usernamePassword
+      name: another-test-usernamepass
+      namespace: default
+    type: Opaque
+status: {}
