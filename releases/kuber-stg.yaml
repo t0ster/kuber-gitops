@@ -10,7 +10,7 @@ spec:
   chart:
     git: git@github.com:t0ster/kuber.git
     path: charts/kuber-stack
-    ref: master
+    ref: origin/master
   values:
     image:
       repository: t0ster/kuber-ui
