@@ -4,6 +4,25 @@ metadata:
   name: jenkins
 spec:
   master:
+    plugins:
+    - name: blueocean
+    basePlugins:
+    - name: kubernetes
+      version: 1.23.1
+    - name: workflow-job
+      version: "2.36"
+    - name: workflow-aggregator
+      version: "2.6"
+    - name: git
+      version: 4.1.1
+    - name: job-dsl
+      version: "1.76"
+    - name: configuration-as-code
+      version: "1.35"
+    - name: configuration-as-code-support
+      version: "1.19"
+    - name: kubernetes-credentials-provider
+      version: "0.13"
     containers:
     - name: jenkins-master
       image: jenkins/jenkins:lts
