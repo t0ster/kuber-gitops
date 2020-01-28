@@ -1,5 +1,6 @@
 resources:
 - jenkins_instance.yaml
+- dind.yaml
 - ingress.yaml
 - cred.yaml
 - github-secrets.yaml
