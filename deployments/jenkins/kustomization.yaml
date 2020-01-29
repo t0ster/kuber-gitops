@@ -4,5 +4,6 @@ resources:
 - ingress.yaml
 - cred.yaml
 - github-secrets.yaml
+- dockerhub-secret.yaml
 - serviceaccounts.yaml
 namespace: cicd
