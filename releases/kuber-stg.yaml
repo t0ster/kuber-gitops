@@ -8,7 +8,7 @@ metadata:
   #   fluxcd.io/automated: "true"
   #   filter.fluxcd.io/chart-image: glob:feature-*
 spec:
-  releaseName: kuber
+  releaseName: kuber-stg
   forceUpgrade: true
   chart:
     git: git@github.com:t0ster/kuber.git
