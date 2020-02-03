@@ -1,0 +1,4 @@
+resources:
+- flux-recv-service.yaml
+- flux-recv-ingress.yaml
+namespace: flux

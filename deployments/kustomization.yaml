@@ -1,4 +1,5 @@
 resources:
+- flux
 - jenkins-operator
 - jenkins
 - nginx

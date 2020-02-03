@@ -1,0 +1,27 @@
+git:
+  user: t0ster
+  email: t0ster@users.noreply.github.com
+  url: git@github.com:t0ster/kuber-gitops
+  manifestGeneration: true
+  path: crd,deployments,namespaces,releases,secrets,ingresses
+
+syncGarbageCollection:
+  enabled: true
+
+extraVolumes:
+  - name: fluxrecv-config
+    secret:
+      secretName: fluxrecv-config
+      defaultMode: 0400
+
+extraContainers:
+  - name: recv
+    image: fluxcd/flux-recv:0.3.0
+    imagePullPolicy: IfNotPresent
+    args:
+    - --config=/etc/fluxrecv/fluxrecv.yaml
+    ports:
+    - containerPort: 8080
+    volumeMounts:
+    - name: fluxrecv-config
+      mountPath: /etc/fluxrecv

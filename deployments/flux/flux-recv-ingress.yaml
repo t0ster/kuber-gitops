@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: flux-recv
+  namespace: flux
+spec:
+  rules:
+  - host: hooks.35.246.75.225.nip.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: flux-recv
+          servicePort: 8080
