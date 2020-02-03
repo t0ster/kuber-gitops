@@ -1,0 +1,12 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: zalenium
+  namespace: cicd
+spec:
+  releaseName: zalenium
+  chart:
+    git: git@github.com:zalando/zalenium.git
+    path: charts/zalenium
+    ref: master
