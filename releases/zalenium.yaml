@@ -7,6 +7,6 @@ metadata:
 spec:
   releaseName: zalenium
   chart:
-    git: git@github.com:zalando/zalenium.git
+    git: git@github.com:t0ster/zalenium.git
     path: charts/zalenium
     ref: master
