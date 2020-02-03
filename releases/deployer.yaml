@@ -1,0 +1,12 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: deployer
+  namespace: kube-system
+spec:
+  releaseName: deployer
+  chart:
+    git: git@github.com:t0ster/kuber-deployer.git
+    path: chart/kuber-deployer
+    ref: master
