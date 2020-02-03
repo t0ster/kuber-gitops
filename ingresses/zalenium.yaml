@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: zalenium
+  namespace: cicd
+spec:
+  rules:
+  - host: zalenium.35.246.75.225.nip.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: zalenium
+          servicePort: 80
