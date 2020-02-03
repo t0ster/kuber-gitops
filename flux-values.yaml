@@ -2,8 +2,9 @@ git:
   user: t0ster
   email: t0ster@users.noreply.github.com
   url: git@github.com:t0ster/kuber-gitops
-  manifestGeneration: true
   path: crd,deployments,namespaces,releases,secrets,ingresses
+
+manifestGeneration: true
 
 syncGarbageCollection:
   enabled: true
