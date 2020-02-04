@@ -12,6 +12,7 @@ spec:
     ref: master
   values:
     hub:
+      desiredContainers: 1
       resources:
         requests:
           cpu: 100m
