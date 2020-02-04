@@ -10,3 +10,9 @@ spec:
     git: git@github.com:t0ster/zalenium.git
     path: charts/zalenium
     ref: master
+  values:
+    hub:
+      resources:
+        requests:
+          cpu: 100m
+      cpuRequest: 100m
