@@ -12,7 +12,9 @@ spec:
     ref: master
   values:
     hub:
-      seleniumNodeSelector: node-role.kubernetes.io/master=
+      seleniumNodeSelector:
+        key: node-role.kubernetes.io/master
+        value:
       desiredContainers: 1
       resources:
         requests:
