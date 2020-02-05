@@ -11,6 +11,10 @@ spec:
     path: charts/zalenium
     ref: master
   values:
+    nodeSelector:
+      enabled: true
+      key: node-role.kubernetes.io/master
+      value: ""
     hub:
       desiredContainers: 1
       resources:
