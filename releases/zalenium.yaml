@@ -16,5 +16,5 @@ spec:
       desiredContainers: 1
       resources:
         requests:
-          cpu: 200m
+          cpu: 50m
       cpuRequest: 100m
