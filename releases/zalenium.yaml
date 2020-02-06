@@ -12,7 +12,7 @@ spec:
     ref: master
   values:
     hub:
-      seleniumTolerations: "[preemptible=true]"
+      seleniumTolerations: "[{key: preemptible, value: true}]"
       desiredContainers: 1
       resources:
         requests:
