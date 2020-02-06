@@ -12,7 +12,7 @@ spec:
     ref: master
   values:
     hub:
-      seleniumNodeSelector: node-role.kubernetes.io/master=''
+      seleniumTolerations: preemptible=true
       desiredContainers: 1
       resources:
         requests:
