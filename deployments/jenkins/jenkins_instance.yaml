@@ -9,7 +9,7 @@ spec:
   master:
     plugins:
     - name: blueocean
-      version: 1.21.0
+      version: 1.22.0
     basePlugins:
     - name: kubernetes
       version: 1.23.1
@@ -56,7 +56,6 @@ spec:
           cpu: 1500m
           memory: 3Gi
         requests:
-          cpu: "1"
           memory: 500Mi
   seedJobs:
   - id: jenkins-operator
