@@ -12,9 +12,9 @@ spec:
     ref: master
   values:
     hub:
-      seleniumTolerations: "[{key: preemptible, value: true}]"
+      seleniumTolerations: "[preemptible=true]"
       desiredContainers: 1
       resources:
         requests:
-          cpu: 50m
-      cpuRequest: 100m
+          cpu: 100m
+      cpuRequest: 25m
