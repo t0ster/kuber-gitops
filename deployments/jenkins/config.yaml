@@ -11,3 +11,25 @@ data:
         configs:
         - credentialsId: "github-access-token"
         hookUrl: "http://ci.35.246.75.225.nip.io/github-webhook/"
+      globalLibraries:
+        libraries:
+        - defaultVersion: "master"
+          name: "kuber"
+          retriever:
+            modernSCM:
+              scm:
+                github:
+                  configuredByUrl: true
+                  credentialsId: "github-username-access-token"
+                  id: "0769df5d-4dc0-4c87-a9d1-a3756d262b72"
+                  repoOwner: "t0ster"
+                  repository: "kuber-cicd"
+                  repositoryUrl: "https://github.com/t0ster/kuber-cicd.git"
+                  traits:
+                  - gitHubBranchDiscovery:
+                      strategyId: 1
+                  - gitHubPullRequestDiscovery:
+                      strategyId: 1
+                  - gitHubForkDiscovery:
+                      strategyId: 1
+                      trust: "gitHubTrustPermissions"
