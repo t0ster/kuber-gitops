@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: brigade-github-app
+  namespace: cicd
+spec:
+  rules:
+  - host: brigade.35.246.75.225.nip.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: brigade-server-brigade-github-app
+          servicePort: 80
