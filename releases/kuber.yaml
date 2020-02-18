@@ -9,6 +9,6 @@ spec:
   chart:
     git: git@github.com:t0ster/kuber.git
     path: charts/kuber-stack
-    ref: v1.16.4
+    ref: v1.16.5
   values:
     host: kuber.35.246.75.225.nip.io
