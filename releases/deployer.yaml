@@ -9,4 +9,4 @@ spec:
   chart:
     git: git@github.com:t0ster/kuber-deployer.git
     path: chart/kuber-deployer
-    ref: v0.1.8
+    ref: v0.1.9
