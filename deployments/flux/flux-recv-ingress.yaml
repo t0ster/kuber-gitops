@@ -4,7 +4,7 @@ metadata:
   name: flux-recv
 spec:
   rules:
-  - host: hooks.35.246.75.225.nip.io
+  - host: hooks.35.246.105.236.nip.io
     http:
       paths:
       - path: /
