@@ -1,5 +1,4 @@
 resources:
-- jenkins_instance.yaml
 - config.yaml
 - dind.yaml
 - ingress.yaml
